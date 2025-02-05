@@ -1,15 +1,4 @@
 /*---------------------------------------------
-Template name:  mineralo
-Version:        1.0
-Author:         layerdrops
-Author Email:   layerdrops@gmail.com
-
-NOTE:
-------
-Please DO NOT EDIT THIS JS, you may need to use "custom.js" file for writing your custom js.
-We may release future updates so it will overwrite this file. it's better and safer to use "custom.js".
-
-[Table of Content]
 
 01: Main menu
 02: Background image
@@ -27,8 +16,6 @@ We may release future updates so it will overwrite this file. it's better and sa
 14: banner carouser 3
 15: testimonial carousel2
 16: video popup
-
-
 
 ----------------------------------------------*/
 

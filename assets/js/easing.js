@@ -1,10 +1,5 @@
 /*
- * jQuery Easing v1.3.2 - http://gsgd.co.uk/sandbox/jquery/easing/
- * Open source under the BSD License.
- * Copyright Â© 2008 George McGinley Smith
- * All rights reserved.
- * https://raw.github.com/gdsmith/jquery-easing/master/LICENSE
-*/
+ * jQuery Easing v1.3.2 - http://gsgd.co.uk/sandbox/jquery/easing/ */
 (function (h) {
     h.easing.jswing = h.easing.swing; h.extend(h.easing, {
         def: "easeOutQuad", swing: function (e, a, c, b, d) { return h.easing[h.easing.def](e, a, c, b, d) }, easeInQuad: function (e, a, c, b, d) { return b * (a /= d) * a + c }, easeOutQuad: function (e, a, c, b, d) { return -b * (a /= d) * (a - 2) + c }, easeInOutQuad: function (e, a, c, b, d) { return 1 > (a /= d / 2) ? b / 2 * a * a + c : -b / 2 * (--a * (a - 2) - 1) + c }, easeInCubic: function (e, a, c, b, d) { return b * (a /= d) * a * a + c }, easeOutCubic: function (e, a, c, b, d) { return b * ((a = a / d - 1) * a * a + 1) + c }, easeInOutCubic: function (e, a, c, b, d) {
