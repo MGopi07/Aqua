@@ -26,9 +26,6 @@
     <!-- Owl Carusel css file -->
     <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.min.css">
 
-    <!-- camera css -->
-    <link rel="stylesheet" href="assets/plugins/camera/camera.min.css">
-
     <!-- ====video poppu css==== -->
     <link rel="stylesheet" href="assets/plugins/Magnific-Popup/magnific-popup.css">
 
@@ -40,6 +37,10 @@
 
     <!--==== Custom css file ====-->
     <link rel="stylesheet" href="assets/css/custom.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
 </head>
 
 <body>
@@ -124,54 +125,59 @@
     <!-- End of Main header -->
 
     <!-- banner area type3 -->
-    <div class="banner_area1 clearfix mobile-none">
+    
+    <!-- Swiper Slider -->
 
-        <div class="camera_wrap " id="banner_slider1">
-            <div class="hero_slider" data-src="assets/img/banner/h3-banner3.png">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <!-- banner text wrap -->
-                            <div class="banner-text-wrap">
-                                <span class="schoolbell fadeInUp"
-                                    style="animation-duration: 1s; -webkit-animation-duration: 1s; animation-fill-mode: both; animation-delay: .0s;-webkit-animation-delay: .0s;">Enjoy
-                                    great tasting Purifier Machine </span>
-                                <h1 class="text-white fadeInUp"
-                                    style="animation-duration: 1s; -webkit-animation-duration: 1s; animation-fill-mode: both; animation-delay: .2s;-webkit-animation-delay: .3s;">
-                                    We deliver the<br> best Purifier Machine</h1>
-                                <a href="#" class="btn fadeInUp"
-                                    style="animation-duration: 1s; -webkit-animation-duration: 1s; animation-fill-mode: both; animation-delay: .4s;-webkit-animation-delay: .4s;">Order
-                                    Now</a>
-                            </div><!--/.End of  banner text wrap -->
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!--/.container-->
-            </div><!--/.Slider Item-->
-            <div class="hero_slider" data-src="assets/img/banner/newtwo.png">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <!-- banner text wrap -->
-                            <div class="banner-text-wrap">
-                                <span class="schoolbell fadeInUp"
-                                    style="animation-duration: 1s; -webkit-animation-duration: 1s; animation-fill-mode: both; animation-delay: .0s;-webkit-animation-delay: .0s;">Enjoy
-                                    great tasting Purifier Machine</span>
-                                <h1 class="text-white fadeInUp"
-                                    style="animation-duration: 1s; -webkit-animation-duration: 1s; animation-fill-mode: both; animation-delay: .2s;-webkit-animation-delay: .2s;">
-                                    We deliver the<br> best Purifier Machine</h1>
-                                <a href="#" class="btn fadeInUp"
-                                    style="animation-duration: 1s; -webkit-animation-duration: 1s; animation-fill-mode: both; animation-delay: .4s;-webkit-animation-delay: .4s;">Order
-                                    Now</a>
+    <div class="banner_area1 clearfix mobile-none">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 (First Slide) -->
+                <div class="swiper-slide">
+                    <div class="slide-bg active-bg" style="background-image: url('assets/img/banner/newww.png');">
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="banner-text-wrap">
+                                    <span class="schoolbell animated-text fade-in">Enjoy great tasting Purifier
+                                        Machine</span>
+                                    <h1 class="text-white animated-text fade-in">We deliver the<br> best Purifier
+                                        Machine</h1>
+                                    <a href="#" class="btn animated-btn slide-in mt-2 mx-3">Order Now</a>
+                                </div>
                             </div>
-                            <!--/.End of  banner text wrap -->
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-                </div><!--/.container-->
-            </div><!-- /.hero area -->
-        </div><!-- /.camera wrap -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="slide-bg" style="background-image: url('assets/img/banner/Untitled\ design.jpg');"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="banner-text-wrap">
+                                    <span class="schoolbell animated-text">Enjoy great tasting Purifier Machine</span>
+                                    <h1 class="text-white animated-text">We deliver the<br> best Purifier Machine</h1>
+                                    <a href="#" class="btn animated-btn mt-2 mx-3">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination & Navigation -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
     </div>
+
     <!---Banner Area--->
     <div class="banner-mobile tab-desktop-none">
+
         <div class="mobile-view-bg">
             <div class="container">
                 <div class="row">
@@ -202,6 +208,7 @@
 
     <!-- feature area -->
     <section class="pt-120 pb-80 top-shape">
+       
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
@@ -754,9 +761,6 @@
     <!-- ====Counter js file=== -->
     <script src="assets/plugins/waypoints/jquery.counterup.min.js"></script>
 
-    <!-- cammera js -->
-    <script src="assets/plugins/camera/camera.min.js"></script>
-
     <!-- easing js -->
     <script src="assets/js/easing.js"></script>
 
@@ -766,14 +770,60 @@
     <!-- ==== Custom js file==== -->
     <script src="assets/js/custom.js"></script>
 
-    <!-- ==== JQuery Waypoint js file==== -->
-    <!-- <script src="assets/plugins/waypoints/jquery.waypoints.min.js"></script> -->
+    <!-- Include Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- ==== Ratina js file==== -->
-    <!-- <script src="assets/plugins/retinajs/retina.min.js"></script> -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "fade", // Smooth fade transition
+            loop: true,
+            autoplay: {
+                delay: 5000, // Adjust speed
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            on: {
+                init: function () {
+                    // Ensure first slide is visible on load
+                    document.querySelector(".swiper-slide:first-child .slide-bg").classList.add("zoom-in");
+                    document.querySelectorAll(".swiper-slide:first-child .animated-text").forEach(el => {
+                        el.classList.add("fade-in");
+                    });
+                    document.querySelector(".swiper-slide:first-child .animated-btn").classList.add("slide-in");
+                },
+                slideChangeTransitionStart: function () {
+                    document.querySelectorAll(".animated-text, .animated-btn").forEach(el => {
+                        el.classList.remove("fade-in", "slide-in");
+                    });
 
-    <!-- ===video popup=== -->
-    <!-- <script src="assets/plugins/Magnific-Popup/jquery.magnific-popup.min.js"></script> -->
+                    document.querySelectorAll(".slide-bg").forEach(el => {
+                        el.classList.remove("zoom-in");
+                    });
+                },
+                slideChangeTransitionEnd: function () {
+                    document.querySelectorAll(".swiper-slide-active .animated-text").forEach(el => {
+                        el.classList.add("fade-in");
+                    });
+
+                    document.querySelectorAll(".swiper-slide-active .animated-btn").forEach(el => {
+                        el.classList.add("slide-in");
+                    });
+
+                    document.querySelector(".swiper-slide-active .slide-bg").classList.add("zoom-in");
+                }
+            }
+        });
+    </script>
+
+
+
 
 
 </body>
